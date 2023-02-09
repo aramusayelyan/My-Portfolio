@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(22, 22, 22) ;
+
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 450px;
+  height: 350px;
+  perspective: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-right:20px ;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #000;
+  
+  color: white;
+  transform: rotateY(180deg);
+}
+.text{
+    text-align:center;
+    margin-top: 35%;
+}
+.menu{
+ 
+    display: flex;
+    flex-wrap: wrap;
+}
+h3{
+    margin-right: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.lox{
+    margin-left:5% ;
+    margin-right:5% ;
+}
+.cardsss{
+    display: flex;
+    flex-wrap: wrap;
+}
+</style>
+</head>
+<body>
+    <div class="lox">
+    <div class="menu">
+        <h3><a href="home.html">Work</a></h3>
+        <h3><a href="contact.html">Contact Me</a></h3>
+    </div>
+
+<div class="cardsss">
+    <a href="html.html">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="html.png" alt="Avatar" style="width:450px;height:350px;">
+    </div>
+    <div class="flip-card-back">
+      <h1 class="text">HTML & CSS</h1> 
+    </div>
+  </div>
+</div>
+</a>
+
+
+<a href="Python.html">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="/Users/Admin/Desktop/73c5b2afc684e0e6bc1b9469e5120b88.jpg" alt="Avatar" style="width:450px;height:350px;">
+        </div>
+        <div class="flip-card-back">
+          <h1 class="text">Python</h1> 
+        </div>
+      </div>
+    </div>
+    </a>
+
+
+    <a href="ai.html">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="ai.png" alt="Avatar" style="width:450px;height:350px;">
+            </div>
+            <div class="flip-card-back">
+              <h1 class="text">Adobe Ilustrator</h1> 
+            </div>
+          </div>
+        </div>
+        </a>
+
+        <a href="photo.html">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="p.png" alt="Avatar" style="width:450px;height:350px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1 class="text">Photo</h1> 
+                </div>
+              </div>
+            </div>
+            </a>
+
+</div>
+</div>
+</body>
+</html>
